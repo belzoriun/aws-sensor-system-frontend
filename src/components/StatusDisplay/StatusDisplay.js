@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardHeader, CardContent, CardActions } from "@mui/material";
-import Typography from "@mui/material";
+import Button from "@mui/material/Button"
+import Typography from "@mui/material/Typography";
 
 export class StatusDisplay extends Component {
     constructor(props) {
