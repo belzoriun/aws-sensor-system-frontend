@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Card, CardHeader, CardContent, CardActions } from "@mui/material";
+import Typography from "@mui/material";
 
 export class StatusDisplay extends Component {
     constructor(props) {
@@ -7,10 +9,20 @@ export class StatusDisplay extends Component {
 
     render() { 
         return (
-            <div>
-                <p>Active : {this.props.active ? "true" : "false"}</p>
-                <p>Status : {this.props.status}</p>
-            </div>
+            <Card>
+                <CardHeader title={"Sensor " + this.props.sensorID}/>
+                <CardContent>
+                    <Typography variant="h5" component="div">
+                        Active : {this.props.active ? "true" : "false"}
+                    </Typography>
+                    <Typography variant="h5" component="div">
+                        Status : {this.props.status}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button size="small">Learn More</Button>
+                </CardActions>
+            </Card>
         );
     }
 }
