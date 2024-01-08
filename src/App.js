@@ -4,7 +4,7 @@ import { StatusDisplay } from './components/StatusDisplay/StatusDisplay';
 function App() {
   return (
     <div className="App">
-        <StatusDisplay active="true" status="OK"></StatusDisplay>
+        <StatusDisplay sensorId="01" active="true" status="OK"></StatusDisplay>
     </div>
   );
 }
